@@ -1,0 +1,14 @@
+%h1
+  %span.name
+    = model.get('name')
+  .address
+    = model.get('address')
+%dl
+  %dt Tel:
+    %dd.phone
+      = model.get('phone')
+  %dt Email:
+    %dd.email
+      = model.get('email')
+.control
+  %a{ href: '#', class: 'delete' } Delete
